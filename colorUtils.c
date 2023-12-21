@@ -20,6 +20,11 @@ int toGrayScale(int *r, int *g, int *b, Mode mode) {
   return avg;
 
   }
+
+  if(mode==LIGHTNESS)
+  {
+    return (min(*r,*g,*b) + max(*r,*g,*b)) / 2;
+  }
 }
 
 int toSepia(int *r, int *g, int *b) {
