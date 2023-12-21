@@ -13,6 +13,13 @@ int min(int a, int b, int c) {
 
 int toGrayScale(int *r, int *g, int *b, Mode mode) {
   //TODO: implement
+    if(mode==AVERAGE)
+  {
+    double avg = (*r + *g + * b)/3;
+  
+  return avg;
+
+  }
 }
 
 int toSepia(int *r, int *g, int *b) {
